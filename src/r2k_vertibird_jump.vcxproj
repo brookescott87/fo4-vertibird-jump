@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -15,20 +15,20 @@
     <ClCompile Include="VertibirdJump.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\f4se-mirror\src\common\common.vcxproj">
-      <Project>{45b646d1-ff9d-42e9-89c6-8a50af0d875b}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\f4se-mirror\src\f4se\f4se\f4se.vcxproj">
-      <Project>{a236f69d-8ff9-4491-ac5f-45bf49448bbe}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\f4se-mirror\src\f4se\f4se_common\f4se_common.vcxproj">
-      <Project>{20c6411c-596f-4b85-be4e-8bc91f59d8a6}</Project>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Config.h" />
     <ClInclude Include="rva\RVA.h" />
     <ClInclude Include="rva\sscan\Pattern.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\f4se-mirror\src\common\common.vcxproj">
+      <Project>{45b646d1-ff9d-42e9-89c6-8a50af0d875b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\f4se-mirror\src\f4se\f4se\f4se_game.vcxproj">
+      <Project>{a236f69d-8ff9-4491-ac5f-45bf49448bbe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\f4se-mirror\src\f4se\f4se_common\f4se_common.vcxproj">
+      <Project>{f1447a44-f26a-4680-8e20-2d9186766e51}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{18E7C307-E719-484D-BB47-FF22A783223E}</ProjectGuid>
@@ -82,7 +82,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;F4SE_EXPORTS;RUNTIME;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\f4se-mirror\src\f4se;$(SolutionDir)..\..\f4se-mirror\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)f4se-mirror\src\f4se;$(SolutionDir)f4se-mirror\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>common/IPrefix.h</ForcedIncludeFiles>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
